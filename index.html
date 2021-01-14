@@ -1,0 +1,96 @@
+<!-- Index.html Code For Rock Paper Scissors Game
+Created by Bahadir Omer Cakmak 49897 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    
+</head>
+<body>
+    <svg viewBox="0 0 2000 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">Rock Paper Scissors Game</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+
+   
+    
+
+    </div>
+    <div class="score-board" id="score-board">
+        <div id="user-small" class="small">user</div>
+        <div id = "comp-small" class="small">comp</div>
+        <span class = "score"id="user-score">0</span><span class = "score">:</span><span class = "score" id="comp-score">0</span>
+    </div>
+    <div id="results">
+        <h2 id="text-exp">
+        Welcome To Rock Paper Scissors Game!
+        </h2>
+    </div>
+    <div class="choices" id="allChoices">
+
+       <div class="choice" id="Rock">
+           <img src="images/rock.png">
+       </div> 
+
+       <div class="choice" id="Scissors">
+           <img src="images/cut.png">
+       </div> 
+
+       <div class="choice" id="Paper">
+           <img src="images/paper2.png">
+       </div> 
+
+    </div>
+    <p id="message">Make your move.</p>
+
+
+<div class="Iam">
+
+
+    
+<p>This website</p>
+<b>
+  <div class="innerIam">
+    is created by<br /> 
+    Bahadir Omer Cakmak<br />
+    49897<br />
+    for Prof.Mariusz Zawadzki<br />
+    Advanced Internet Technologies
+    </div>
+</b>
+
+
+<div id="color-buttons">
+    <p id="setcolor">Themes :</p>
+    <button type="button" class="btn btn-primary" onclick="Blue()"> Sky </button> 
+    <button type="button" class="btn btn-success" onclick="Green()"> Nature </button> 
+    <button type="button" class="btn btn-warning" onclick="Yellow()"> Gold </button> 
+    <button type="button" class="btn btn-dark" onclick="Dark()"> Space </button> 
+</div>
+
+</div>
+<!-- <div id="social">
+    <a style="font-size: 50px; margin: 20px; padding-left: 40%;" href="#" class="fa fa-facebook"></a>
+    <a style="font-size: 50px; margin: 20px"href="#" class="fa fa-youtube"></a>
+    <a style="font-size: 50px; margin: 20px"href="#" class="fa fa-instagram"></a>
+    <a style="font-size: 50px; margin: 20px"href="#" class="fa fa-google"></a> -->
+    <script src="app.js"></script>
+</div>
+</body>
+</html>

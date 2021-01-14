@@ -1,0 +1,281 @@
+/* External CSS Code For Rock Paper Scissors Game
+Created by Bahadir Omer Cakmak 49897 */
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Asap,sans-serif ;
+}
+header h1{
+    
+    background:white;
+    padding:20px;
+    text-align: center;
+    
+}
+body{
+    background-color: #262632;
+    
+}
+.score-board{
+    margin: auto;
+    margin-top: 25px;
+    border: 3px solid white;
+    width: 250px;
+    height: 150px;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+#setcolor{
+    padding-left: 25px;
+    font-size:30px;
+    color: white;
+    
+}
+#color-buttons{
+    text-align: center;
+}
+
+.small{
+    background: #D84958;
+    font-size: 20px;
+    height: 25px;
+    width: 80px;
+    text-align: center;
+    border: #D84958;
+    border-radius: 4px;
+}
+#user-small{
+    position: absolute;
+    left: -40px;
+    bottom: 65px;
+}
+#comp-small{
+    position: absolute;
+    bottom: 65px;
+    left: 210px;
+
+}
+.score{
+    position: absolute;
+    bottom: 45px;
+}
+#user-score{
+    left: 53px;
+    bottom: 30px;
+    font-size: 60px;
+}
+#comp-score{
+    right: 45px;
+    font-size: 60px;
+    bottom: 30px;
+}
+
+#results h2{
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 52px;
+    padding :15px;
+}
+.choices{
+    margin: 40px 0;
+    text-align: center;
+    
+}
+.choice{
+    margin: 0 30px;
+    border: 5px white solid;
+    border-radius: 50%;
+    display: inline-block;
+}
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    
+}
+.choice:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+    
+}
+#message{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.wiinnerOption{
+    border-color: green;
+    box-shadow: 0 0 15 greenyellow;
+    color: green;
+    
+}
+.loserOption{
+    border-color: red;
+    box-shadow: 0 0 15 red;
+    color: red;
+}
+.drawOption{
+    border-color: grey;
+    box-shadow: 0 0 15 grey;
+    color: grey;
+}
+.makebigger{
+    font-size: 80px !important;
+    bottom: 30px !important;
+    left: -135px !important;
+}
+.makebigger2{
+    font-size: 80px !important;
+    bottom: 30px !important;
+    right: -135px !important;
+}
+/* ---- */
+
+
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+/*  */
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+}
+
+body{
+  background: #030321;
+  font-family: Arial;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}

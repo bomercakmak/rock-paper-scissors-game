@@ -10,7 +10,7 @@ let scoreboard = document.getElementById("score-board");
 const paper = document.getElementById("Paper");
 let allChoices = document.getElementById("allChoices");
 let results_text = document.querySelector("#results > h2");
-let text_exp = document.getElementById("text-exp"); 
+let text_exp = document.getElementById("text-exp");
 let compArray = ["Rock", "Scissors", "Paper"];
 let user_value;
 let userpick;
@@ -24,66 +24,66 @@ function compChoice() {
 }
 
 function randomNumber() {
-    let random_Number = Math.floor(Math.random() * 3);   
+    let random_Number = Math.floor(Math.random() * 3);
     return random_Number;
 }
 
 function game(userValue) {
     compick = compChoice();
     let lastChoice = userValue + compick;
-    
+
     switch (lastChoice) {
-        
+
         case "RockScissors":
         case "ScissorsPaper":
         case "PaperRock":
             console.log(lastChoice);
             userpick = userValue;
-            
+
             winnerOption();
             break;
-    
+
         case "RockRock":
         case "ScissorsScissors":
         case "PaperPaper":
             console.log(lastChoice);
             userpick = userValue;
-            
+
             drawOption();
             break;
-        
+
         case "RockPaper":
         case "ScissorsRock":
         case "PaperScissors":
             console.log(lastChoice);
             userpick = userValue;
-            
+
             looserOption();
             break;
-    
+
         default:
-            
+
             break;
     }
 }
 
 function Blue() {
     document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/d4/98/f5/d498f54a546cd21ac88a1be0d754fed4.jpg')";
-    
+
 }
 function Green() {
     document.body.style.backgroundImage = "url('https://wallpaperset.com/w/full/3/a/6/274813.jpg')";
-    
+
 }
 function Yellow() {
     document.body.style.backgroundImage = "url('https://wallpapercave.com/wp/wp2580054.png')";
-    
+
 }
 function Dark() {
     document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=2252&q=80')";
-    
+
 }
-function winnerOption(){
+function winnerOption() {
     user_score++;
     userScoreSpan.innerHTML = (user_score);
     results_text.innerHTML = userpick + " Beats " + compick + " You Win ! ";
@@ -99,12 +99,12 @@ function winnerOption(){
         paper.classList.remove("wiinnerOption");
         scissors.classList.remove("wiinnerOption");
     }, 700);
-    
-    
+
+
 }
-    
+
 function drawOption() {
-    
+
     results_text.innerHTML = userpick + " Draw " + compick + " You Draw ! ";
     scoreboard.classList.add("drawOption");
     rock.classList.add("drawOption");
@@ -135,12 +135,6 @@ function looserOption() {
     }, 700);
 
 }
-
-
-
-
-
-
 
 
 rock.addEventListener("click", function () {

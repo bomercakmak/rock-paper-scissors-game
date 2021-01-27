@@ -139,8 +139,6 @@ img{
 }
 /* ---- */
 
-
-
 .Iam {
   padding: 2em 5em;
   font: normal 40px/50px Montserrat, sans-serif;
@@ -173,12 +171,14 @@ img{
     -ms-animation:move 5s;
      -o-animation:move 5s;
         animation:move 5s;
+
 /*animation-iteration-count*/
 -webkit-animation-iteration-count:infinite;
    -moz-animation-iteration-count:infinite;
     -ms-animation-iteration-count:infinite;
      -o-animation-iteration-count:infinite;
         animation-iteration-count:infinite;
+
 /*animation-delay*/
 -webkit-animation-delay:1s;
    -moz-animation-delay:1s;
@@ -186,6 +186,7 @@ img{
      -o-animation-delay:1s;
         animation-delay:1s;
 }
+
 @keyframes move{
 0%  { top: 0px; }
 20% { top: -50px; }

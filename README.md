@@ -8,7 +8,8 @@
 <br/>
 &nbsp; &nbsp;&nbsp; &nbsp; I integrated the real-life game to play on the computer. However, you play against the computer in the game. Have fun!
 <br/>
-<img src="screen.png" alt=" ">
+
+<a href="https://bomercakmakgame.netlify.app/"><img src="screen.png" alt=" "></a>
 
 
 
